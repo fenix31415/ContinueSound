@@ -104,7 +104,7 @@ void apply_oncontunue()
 	} xbyakCode{ playSound_addr, funcAddr + 0x16 + BRANCH_TYPE, subAddr };
 	add_trampoline<BRANCH_TYPE, ID, 0x16>(static_cast<Xbyak::CodeGenerator*>(&xbyakCode));
 }
-
+ 
 void apply_hooks()
 {
 	SKSE::AllocTrampoline(1 << 10);
